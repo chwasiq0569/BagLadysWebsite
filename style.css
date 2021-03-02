@@ -22,11 +22,27 @@ body {
   height: 100%;
 }
 
+.webpage__Wrapper main .hero__Section {
+  width: 100%;
+  height: 100%;
+}
+.webpage__Wrapper main .hero__Section .heroImage__Container {
+  margin-top: -5rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.webpage__Wrapper main {
+  width: 100%;
+  height: 100%;
+}
+
 .webpage__Wrapper main .navbar__Wrapper {
   width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
+  border: 4px solid red;
 }
 .nav_bgWrapper {
   width: 100%;
@@ -53,15 +69,7 @@ body {
   /* font-family: 800; */
   color: #5cb3d7;
 }
-.webpage__Wrapper main .hero__Section {
-  width: 100%;
-  height: 100%;
-}
-.webpage__Wrapper main .hero__Section .heroImage__Container {
-  margin-top: -5rem;
-  width: 100%;
-  height: 100vh;
-}
+
 .webpage__Wrapper main .hero__Section .heroImage__Container img {
   width: 100%;
   height: 100%;
@@ -69,18 +77,18 @@ body {
 }
 .hero__Section .heroImage__Container .circle__Component {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 5rem);
   position: absolute;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
-.hero__Section .heroImage__Container .circle__Component .cirlceBorder {
-  width: 500px;
-  height: 500px;
-  border: 6px solid white;
+.hero__Section .heroImage__Container .circle__Component .circleBorder {
+  width: 35rem;
+  height: 35rem;
+  border: 6px solid rgba(255, 255, 255, 0.85);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -89,31 +97,60 @@ body {
 .hero__Section
   .heroImage__Container
   .circle__Component
-  .cirlceBorder
+  .circleBorder
   .mainCircle {
-  width: 475px;
-  height: 475px;
-  background-color: white;
+  width: 95%;
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 50%;
-  /* margin: 2rem; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 1rem;
 }
+/* .hero__Section
+  .heroImage__Container
+  .circle__Component
+  .circleBorder
+  .mainCircle {
+  width: 475px;
+  height: 475px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
 .hero__Section
   .heroImage__Container
   .circle__Component
-  .cirlceBorder
+  .circleBorder
+  .mainCircle::before {
+  content: " ";
+  width: 475px;
+  height: 475px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+} */
+
+.hero__Section
+  .heroImage__Container
+  .circle__Component
+  .circleBorder
   .mainCircle
   .logoContainer {
   width: 12rem;
   height: 12rem;
+  z-index: 1;
 }
 .hero__Section
   .heroImage__Container
   .circle__Component
-  .cirlceBorder
+  .circleBorder
   .mainCircle
   .logoContainer
   img {
@@ -124,7 +161,7 @@ body {
 .hero__Section
   .heroImage__Container
   .circle__Component
-  .cirlceBorder
+  .circleBorder
   .mainCircle
   .title {
   width: 100%;
@@ -135,12 +172,13 @@ body {
   font-size: 50px;
   color: #f77355;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  z-index: 1;
 }
 .hero__Section
   .heroImage__Container
   .circle__Component
-  .cirlceBorder
+  .circleBorder
   .mainCircle
   .catchUs__Btn {
   width: 10rem;
@@ -151,11 +189,13 @@ body {
   font-weight: 700;
   font-family: Avenir;
   transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 1;
 }
 .hero__Section
   .heroImage__Container
   .circle__Component
-  .cirlceBorder
+  .circleBorder
   .mainCircle
   .catchUs__Btn:hover {
   background-color: #f77355;
