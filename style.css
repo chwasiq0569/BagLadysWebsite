@@ -39,6 +39,11 @@ body {
 .webpage__Wrapper main {
   width: 100%;
   height: 100%;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .webpage__Wrapper main .navbar__Wrapper {
@@ -271,4 +276,111 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.middleSection__Container {
+  width: 1962px;
+  height: 100%;
+}
+.middleSection__Container .innerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.middleSection__Container .innerContainer .col {
+  /* width: 25%; */
+}
+.middleSection__Container .innerContainer .col1 {
+  width: 25%;
+  background-color: #f77355;
+  margin-right: 0.5rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.middleSection__Container .innerContainer .col2,
+.middleSection__Container .innerContainer .col4 {
+  width: 17.5%;
+}
+.middleSection__Container .innerContainer .col3 {
+  width: 35%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.middleSection__Container .innerContainer .col2 .upperImage,
+.middleSection__Container .innerContainer .col4 .upperImage,
+.middleSection__Container .innerContainer .col2 .lowerImage,
+.middleSection__Container .innerContainer .col4 .lowerImage {
+  width: 100%;
+  height: 50%;
+}
+.middleSection__Container .innerContainer .col2 .upperImage,
+.middleSection__Container .innerContainer .col4 .upperImage {
+  margin-bottom: 0.5rem;
+}
+.middleSection__Container .innerContainer .col2 .upperImage img,
+.middleSection__Container .innerContainer .col4 .upperImage img,
+.middleSection__Container .innerContainer .col2 .lowerImage img,
+.middleSection__Container .innerContainer .col4 .lowerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.middleSection__Container .innerContainer .col3 .imgContainer {
+  width: 100%;
+  height: 100%;
+}
+.middleSection__Container .innerContainer .col3 .imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.middleSection__Container .innerContainer .col1 .upperSection {
+  width: 100%;
+  height: 20%;
+}
+.middleSection__Container .innerContainer .col1 .upperSection .imgContainer {
+  width: 6rem;
+  height: 6rem;
+}
+.middleSection__Container
+  .innerContainer
+  .col1
+  .upperSection
+  .imgContainer
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.middleSection__Container .innerContainer .col1 .headLine {
+  width: 100%;
+  font-size: 50px;
+  font-family: LuloClean;
+  color: white;
+}
+.middleSection__Container .innerContainer .col1 .iconsSection {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.middleSection__Container .innerContainer .col1 .iconsSection .iconContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.middleSection__Container
+  .innerContainer
+  .col1
+  .iconsSection
+  .iconContainer
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.shopSecion {
+  width: 1962px;
+  border: 1px solid red;
+  height: 100%;
 }
