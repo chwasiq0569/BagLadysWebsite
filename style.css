@@ -9,6 +9,18 @@
   src: url("./Fonts/Metropolis/Metropolis-SemiBold.otf");
 }
 @font-face {
+  font-family: AvenirRegular;
+  src: url("./Fonts/Metropolis/Metropolis-Regular.otf");
+}
+@font-face {
+  font-family: AvenirMedium;
+  src: url("./Fonts/Metropolis/Metropolis-Medium.otf");
+}
+@font-face {
+  font-family: AvenirSemiBold;
+  src: url("./Fonts/Metropolis/Metropolis-SemiBold.otf");
+}
+@font-face {
   font-family: AvenirLight;
   src: url("./Fonts/Metropolis/Metropolis-ExtraLight.otf");
 }
@@ -445,3 +457,82 @@ body {
   font-size: 1rem;
   color: #f77355;
 }
+.newsLetter__Component {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.newsLetter__Component .videoContainer {
+  width: 100%;
+  height: 100%;
+}
+.newsLetter__Component .videoContainer video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newsLetter__Component .videoContent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsLetter__Component .videoContent .headline {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: LuloClean;
+  font-size: 3rem;
+  color: white;
+}
+.newsLetter__Component .videoContent .secondaryText {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: LuloClean;
+  font-size: 0.85rem;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.newsLetter__Component .videoContent .subscriptionContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.newsLetter__Component .videoContent .subscriptionContainer input {
+  width: 40%;
+  height: 2.5rem;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem;
+  font-family: AvenirRegular;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.newsLetter__Component .videoContent .subscriptionContainer input::placeholder {
+  color: white;
+}
+.newsLetter__Component .videoContent .subscriptionContainer button {
+  width: 20%;
+  height: 2.5rem;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  margin-left: 0.5rem;
+  font-family: LuloClean;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+/* .secondaryText
+subscriptionContainer */
