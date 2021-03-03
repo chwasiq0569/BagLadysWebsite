@@ -650,10 +650,51 @@ subscriptionContainer */
     margin-bottom: 2rem;
   }
   .intro__Section .leftSide .head {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .intro__Section .leftSide .info {
+    width: 100%;
     font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .middleSection__Container {
+    max-width: 100vw;
+    width: 100%;
+  }
+  .middleSection__Container .innerContainer {
+    width: 100%;
+    /* border: 4px solid red; */
+    flex-direction: column;
+  }
+  .middleSection__Container .innerContainer .col,
+  .middleSection__Container .innerContainer .col1,
+  .middleSection__Container .innerContainer .col2,
+  .middleSection__Container .innerContainer .col3 {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+  .middleSection__Container .innerContainer .col1 {
+    padding: 2rem;
+    margin-bottom: 0.25rem;
+    /* display: flex; */
+    /* fl; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .middleSection__Container .innerContainer .col1 .upperSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .middleSection__Container .innerContainer .col1 .headLine {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
