@@ -14,7 +14,6 @@
         <main>
             <div class="navbar__Wrapper">
                 <div class="nav_bgWrapper">
-
                 </div>
                 <nav>
                     <a href="#">HOME</a>
@@ -23,6 +22,19 @@
                     <a href="#">SHOP</a>
                     <a href="#">CONTACT</a>
                 </nav>
+                <div id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobileNav" class="mobileNav">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">GALLERY</a>
+                    <a href="#">SHOP</a>
+                    <a href="#">CONTACT</a>
+                </div>
             </div>
             <div class="hero__Section">
                 <div class="heroImage__Container">
@@ -104,7 +116,6 @@
                         </div>
                     </div>
                 </div>
-               
             </div>
             <div class="shopSecion">
                 <h1 class="section__Head">SHOP NOW</h1>
@@ -136,8 +147,11 @@
                 </div>
             </div>
             <div class="newsLetter__Component">
-                <div class="videoContainer">
+                 <div class="videoContainer">
                     <video autoplay loop role="presentation" preload="auto" playsinline="" crossorigin="anonymous" class="bgVideovideo" autoplay loop src="https://video.wixstatic.com/video/5839f2_1cedb1cc7a1741af917aa67809bcf432/720p/mp4/file.mp4"></video>
+                </div> 
+                <div class="newsletterBg__Image">
+                    <img src="./assets/images/newsletterbg.webp" alt="backgroundImage" />
                 </div>
                 <div class="videoContent">
                     <h1 class="headline">STAY UPDATED</h1>
@@ -166,6 +180,16 @@
             </div>   
         </main>
     </div>
-</body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        console.log("JS");
+        $(document).ready(function(){
+	    $('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+        $("#mobileNav").toggleClass('mobileNavOpen');
+	                                });
+        });
+    </script>
+</body>
 </html>
