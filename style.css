@@ -635,6 +635,30 @@ subscriptionContainer */
   .intro__Section .leftSide .info {
     font-size: 0.85rem;
   }
+  .shopSecion {
+    width: 1000px;
+    justify-content: space-between;
+  }
+  .shopSecion .section__Head {
+    text-transform: uppercase;
+    font-family: Lulo-Clean-W01-One-Bold;
+    letter-spacing: -7px;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #f77355;
+  }
+  .shopSecion .items_Grid .col2 .imgContainer p {
+    font-size: 0.75rem;
+  }
+  .shopSecion .items_Grid .col1,
+  .shopSecion .items_Grid .col3 {
+    width: 15%;
+  }
+  .shopSecion .items_Grid .col2 {
+    width: 70%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 @media only screen and (max-width: 700px) {
   .intro__Section {
@@ -661,11 +685,13 @@ subscriptionContainer */
   .middleSection__Container {
     max-width: 100vw;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .middleSection__Container .innerContainer {
     width: 100%;
-    /* border: 4px solid red; */
     flex-direction: column;
+    margin: 0.75rem;
   }
   .middleSection__Container .innerContainer .col,
   .middleSection__Container .innerContainer .col1,
@@ -678,8 +704,6 @@ subscriptionContainer */
   .middleSection__Container .innerContainer .col1 {
     padding: 2rem;
     margin-bottom: 0.25rem;
-    /* display: flex; */
-    /* fl; */
     flex-direction: column;
     align-items: center;
   }
@@ -692,9 +716,57 @@ subscriptionContainer */
   .middleSection__Container .innerContainer .col1 .headLine {
     width: 100%;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .shopSecion {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem !important;
+  }
+  .shopSecion .section__Head {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+  .shopSecion .items_Grid {
+    flex-direction: column;
+  }
+  .shopSecion .items_Grid .col1,
+  .shopSecion .items_Grid .col3 {
+    width: 25%;
+  }
+  .shopSecion .items_Grid .col1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .shopSecion .items_Grid .col3 {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+
+  .shopSecion .items_Grid .col2 {
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    margin: 0;
+  }
+  .shopSecion .items_Grid .col2 .imgContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .shopSecion .items_Grid .col2 .imgContainer img {
+    object-fit: contain;
+    width: 100%;
+  }
+  .shopSecion .items_Grid .col2 .imgContainer p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 }
 
