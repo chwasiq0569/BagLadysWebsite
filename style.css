@@ -322,7 +322,7 @@ body {
   color: black;
   border: 3px solid black;
 }
-/* .hero__Section
+.hero__Section
   .heroImage__Container
   .circle__Component
   .circleBorder
@@ -331,38 +331,21 @@ body {
   width: 10rem;
   height: 3rem;
   background-color: transparent;
-  border: 3px solid black;
+  border: 5px solid black;
   font-size: 1rem;
   font-weight: 700;
-  font-family: Avenir;
+  font-family: AvenirBold;
   transition: all 0.5s ease;
   cursor: pointer;
   z-index: 1;
-} */
-/* .catchUs__Btn {
-  width: 11rem;
-  height: 3rem;
-  background-color: transparent;
-  border: 5px solid #f77355;
-  color: #f77355;
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: Lulo-Clean-W01-One-Bold;
-  letter-spacing: -2px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  z-index: 1;
-} */
-/* .hero__Section
+}
+
+.hero__Section
   .heroImage__Container
   .circle__Component
   .circleBorder
   .mainCircle
   .catchUs__Btn:hover {
-  background-color: #f77355;
-  color: white;
-} */
-.catchUs__Btn:hover {
   background-color: #f77355;
   border: 3px solid #f77355;
   color: white;
@@ -406,6 +389,21 @@ body {
 }
 .intro__Section .leftSide .catchUs__Btn {
   margin-top: 2rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 5px solid #f77355;
+  color: #f77355;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: AvenirBold;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+.intro__Section .leftSide .catchUs__Btn:hover {
+  background-color: #f77355;
+  color: white;
 }
 .intro__Section .leftSide .waves__Container {
   width: 5rem;
@@ -543,6 +541,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 6rem;
 }
 
 .menuSection .headText {
@@ -552,10 +551,12 @@ body {
   font-size: 6.5rem;
   color: #f77355;
   text-align: center;
+  /* list-style: none;12. */
+  line-height: 1;
 }
 .menuSection .headlineText {
+  padding-top: 2rem;
   padding-bottom: 2rem;
-  width: 80%;
   font-family: AvenirLight;
   line-height: 1.5;
   font-size: 1rem;
@@ -1076,6 +1077,10 @@ subscriptionContainer */
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .menuSection .headlineText {
+    width: 65%;
+    margin-top: 2rem;
+  }
 }
 @media only screen and (max-width: 700px) {
   .intro__Section {
@@ -1247,6 +1252,12 @@ subscriptionContainer */
     .rightSide {
     width: 100%;
   }
+  .menuSection .menuSection__head .headText {
+    font-size: 3rem;
+    line-height: 1.25;
+    width: 95%;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -1277,6 +1288,36 @@ subscriptionContainer */
   .footerComponent .upper {
     width: 30%;
   }
+  .navigationSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigationSection .navBtns {
+    width: 98% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .navigationSection .navBtns .signatureDishes__Btn,
+  .navigationSection .navBtns .buildYourOwnBag__Btn {
+    width: 50% !important;
+    font-size: 0.75rem !important;
+    margin: 0;
+    padding-bottom: 1rem !important;
+  }
+  .contentSection {
+    margin: 0 !important;
+    padding: 0.5rem !important;
+  }
+  .contentSection .contentSection__leftSide {
+    margin-top: 3rem;
+  }
+  .contentSection .contentSection__rightSide {
+    margin-top: 2rem;
+  }
 }
 @media only screen and (max-width: 475px) {
   .newsletterBg__Image {
@@ -1304,6 +1345,10 @@ subscriptionContainer */
   .footerComponent .upper {
     width: 45%;
   }
+  .menuSection .headlineText {
+    width: 80%;
+    /* margin-top: 2rem; */
+  }
 }
 @media only screen and (max-width: 400px) {
   .hero__Section .heroImage__Container .circle__Component .circleBorder {
@@ -1330,7 +1375,7 @@ subscriptionContainer */
     margin-bottom: 1rem;
     margin-top: -1rem;
   }
-  .catchUs__Btn {
+  .hero__Section .circle__Component .circleBorder .mainCircle .catchUs__Btn {
     width: 9rem;
     height: 2.5rem;
     background-color: transparent;
