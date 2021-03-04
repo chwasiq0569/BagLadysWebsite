@@ -535,6 +535,314 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
+.menuSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menuSection .headText {
+  text-transform: uppercase;
+  font-family: Lulo-Clean-W01-One-Bold;
+  letter-spacing: -7px;
+  font-size: 6.5rem;
+  color: #f77355;
+  text-align: center;
+}
+.menuSection .headlineText {
+  padding-bottom: 2rem;
+  width: 80%;
+  font-family: AvenirLight;
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: center;
+  width: 50%;
+  color: #aaaaaa;
+}
+.menuSection .navigationSection {
+  /* margin-top: 4rem; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuSection .navigationSection .navBtns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuSection .navigationSection .navBtns .signatureDishes__Btn,
+.menuSection .navigationSection .navBtns .buildYourOwnBag__Btn {
+  height: 3rem;
+  width: 10rem;
+  font-family: AvenirLight;
+  font-size: 0.85rem;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+}
+.menuSection .navigationSection .navBtns .buildYourOwnBag__Btn {
+  margin-left: 2rem;
+}
+.menuSection .menuSection__head {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuSection .navigationSection {
+  width: 100%;
+  height: 5%;
+}
+.menuSection .contentSection {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  padding: 2rem;
+}
+.menuSection .contentSection .contentSection__leftSide {
+  width: 30%;
+  height: 100%;
+  border: 5px solid rgb(219, 214, 214);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.menuSection .contentSection .contentSection__rightSide {
+  width: 70%;
+  height: 100%;
+  /* border: 2px solid red; */
+  padding: 21px;
+  padding-left: 2rem;
+  /* padding-left: 2rem; */
+}
+
+.menuSection .contentSection .contentSection__leftSide .head,
+.menuSection .contentSection .contentSection__rightSide .upperSection .head {
+  text-transform: uppercase;
+  font-family: AvenirMedium;
+  font-size: 2.5rem;
+  color: black;
+  text-align: left;
+  border-bottom: 4px solid black;
+  padding-bottom: 0.5rem;
+}
+
+.menuSection .contentSection .contentSection__leftSide .productComponent,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .upperSection
+  .productComponent,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .leftSide
+  .productComponent,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide
+  .productComponent {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.menuSection .contentSection .contentSection__leftSide .productComponent .upper,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .upperSection
+  .productComponent
+  .upper,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .leftSide
+  .productComponent
+  .upper,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide
+  .productComponent
+  .upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.menuSection
+  .contentSection
+  .contentSection__leftSide
+  .productComponent
+  .upper
+  h1,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .upperSection
+  .productComponent
+  .upper
+  h1,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .leftSide
+  .productComponent
+  .upper
+  h1,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide
+  .productComponent
+  .upper
+  h1 {
+  font-size: 1rem;
+  font-family: AvenirMedium;
+  line-height: 1.5;
+}
+.menuSection
+  .contentSection
+  .contentSection__leftSide
+  .productComponent
+  .upper
+  em,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .upperSection
+  .productComponent
+  .upper
+  em,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .leftSide
+  .productComponent
+  .upper
+  em,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide
+  .productComponent
+  .upper
+  em {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: rgb(114, 110, 116);
+}
+.menuSection .contentSection .contentSection__leftSide .productComponent .lower,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .upperSection
+  .productComponent
+  .lower,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .leftSide
+  .productComponent
+  .lower,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide
+  .productComponent
+  .lower {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuSection
+  .contentSection
+  .contentSection__leftSide
+  .productComponent
+  .lower
+  p,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .upperSection
+  .productComponent
+  .lower
+  p,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .leftSide
+  .productComponent
+  .lower
+  p,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide
+  .productComponent
+  .lower
+  p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-family: AvenirLight;
+  text-align: left;
+  line-height: 1.4;
+  color: rgb(114, 110, 116);
+}
+
+.menuSection .contentSection .contentSection__rightSide .upperSection {
+  width: 100%;
+  height: 25%;
+}
+
+.menuSection .contentSection .contentSection__rightSide .lowerSection {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuSection .contentSection .contentSection__rightSide .lowerSection .leftSide,
+.menuSection
+  .contentSection
+  .contentSection__rightSide
+  .lowerSection
+  .rightSide {
+  width: 48%;
+  height: 100%;
+}
+
 .shopSecion {
   width: 1962px;
   height: 100%;
@@ -789,6 +1097,14 @@ subscriptionContainer */
     width: 100%;
     font-size: 1.25rem;
   }
+  .menuSection .contentSection {
+    flex-direction: column;
+  }
+  .menuSection .contentSection .contentSection__leftSide,
+  .menuSection .contentSection .contentSection__rightSide {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -914,6 +1230,22 @@ subscriptionContainer */
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+  .menuSection .contentSection .contentSection__rightSide .lowerSection {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menuSection
+    .contentSection
+    .contentSection__rightSide
+    .lowerSection
+    .leftSide,
+  .menuSection
+    .contentSection
+    .contentSection__rightSide
+    .lowerSection
+    .rightSide {
+    width: 100%;
   }
 }
 
