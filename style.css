@@ -358,6 +358,7 @@ body {
   align-items: center;
   padding: 4.5rem;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 .intro__Section .leftSide,
 .intro__Section .rightSide {
@@ -428,7 +429,9 @@ body {
 }
 .middleSection__Container {
   width: 1962px;
-  height: 100%;
+  /* height: 100%; */
+  height: 45rem;
+  /* border: 4px solid blue !important; */
 }
 .middleSection__Container .innerContainer {
   width: 100%;
@@ -541,7 +544,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .menuSection .headText {
@@ -851,7 +855,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 .shopSecion .section__Head {
   text-transform: uppercase;
