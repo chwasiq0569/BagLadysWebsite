@@ -73,7 +73,7 @@ body {
   height: 5rem;
   display: flex;
   justify-content: center;
-  border: 4px solid red;
+  /* border: 4px solid red; */
 }
 .nav_bgWrapper {
   width: 100%;
@@ -99,7 +99,8 @@ body {
   font-size: 0.85rem;
   text-transform: uppercase;
   /* font-family: 800; */
-  color: #5cb3d7;
+  /* color: #5cb3d7; */
+  color: #2b416e;
   transition: all 0.5s ease;
 }
 
@@ -126,7 +127,7 @@ body {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #d3531a;
+  background: white;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -281,9 +282,11 @@ body {
   .circleBorder
   .mainCircle
   .logoContainer {
-  width: 12rem;
-  height: 12rem;
+  width: 25rem;
+  height: 25rem;
   z-index: 1;
+  padding: 0;
+  margin-top: -3.5rem;
 }
 .hero__Section
   .heroImage__Container
@@ -295,6 +298,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  padding: 0;
+  margin: 0;
 }
 .hero__Section
   .heroImage__Container
@@ -308,10 +313,12 @@ body {
   font-family: Lulo-Clean-W01-One-Bold;
   letter-spacing: -7px !important;
   font-size: 50px;
-  color: #f77355;
+  /* color: #2b416e; */
+  color: #2b416e;
   line-height: 1.2;
   margin-bottom: 2.5rem;
   z-index: 1;
+  margin-top: -4rem;
 }
 .hero__Section
   .heroImage__Container
@@ -346,9 +353,10 @@ body {
   .circleBorder
   .mainCircle
   .catchUs__Btn:hover {
-  background-color: #f77355;
-  border: 3px solid #f77355;
+  background-color: #2b416e;
+  border: 3px solid #2b416e;
   color: white;
+  border-radius: 0;
 }
 .intro__Section {
   height: auto;
@@ -378,7 +386,7 @@ body {
   font-size: 6.5rem;
   width: 140%;
   z-index: 1;
-  color: #f77355;
+  color: #2b416e;
   line-height: 1;
 }
 .intro__Section .leftSide .info {
@@ -393,8 +401,8 @@ body {
   width: 10rem;
   height: 3rem;
   background-color: transparent;
-  border: 5px solid #f77355;
-  color: #f77355;
+  border: 5px solid #2b416e;
+  color: #2b416e;
   font-size: 1rem;
   font-weight: 700;
   font-family: AvenirBold;
@@ -403,9 +411,11 @@ body {
   z-index: 1;
 }
 .intro__Section .leftSide .catchUs__Btn:hover {
-  background-color: #f77355;
+  background-color: #2b416e;
   color: white;
+  border-radius: 0;
 }
+
 .intro__Section .leftSide .waves__Container {
   width: 5rem;
   height: 5rem;
@@ -443,7 +453,7 @@ body {
 }
 .middleSection__Container .innerContainer .col1 {
   width: 25%;
-  background-color: #f77355;
+  background-color: #2b416e;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -553,7 +563,7 @@ body {
   font-family: Lulo-Clean-W01-One-Bold;
   letter-spacing: -7px;
   font-size: 6.5rem;
-  color: #f77355;
+  color: #2b416e;
   text-align: center;
   /* list-style: none;12. */
   line-height: 1;
@@ -862,7 +872,7 @@ body {
   font-family: Lulo-Clean-W01-One-Bold;
   letter-spacing: -7px;
   font-size: 6.5rem;
-  color: #f77355;
+  color: #2b416e;
 }
 .shopSecion .items_Grid {
   width: 100%;
@@ -912,7 +922,7 @@ body {
   text-transform: uppercase;
   font-family: Lulo-Clean-W01-One-Bold;
   font-size: 1rem;
-  color: #f77355;
+  color: #2b416e;
   text-align: center;
 }
 .newsLetter__Component {
@@ -1010,7 +1020,7 @@ subscriptionContainer */
 .footerComponent {
   width: 100%;
   height: 8rem;
-  background-color: #6fe3f3;
+  /* background-color: #2b416e; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1030,7 +1040,41 @@ subscriptionContainer */
   object-fit: contain;
   filter: invert(1);
 }
-
+.donateSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b416e;
+  padding: 4rem;
+}
+.donateSection .tagline {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: AvenirRegular;
+  line-height: 2;
+  color: white;
+}
+.donateSection .thanksTxt {
+  font-size: 1.35rem;
+  text-align: center;
+  font-family: AvenirSemiBold;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.donateSection .donationBtn {
+  cursor: pointer;
+  width: 12rem;
+  height: 3rem;
+  background-color: white;
+  color: #2b416e;
+  font-size: 1rem;
+  letter-spacing: -3px;
+  font-family: LuloClean;
+}
 @media only screen and (max-width: 968px) {
   .intro__Section .leftSide .head {
     font-size: 5rem;
@@ -1067,7 +1111,7 @@ subscriptionContainer */
     letter-spacing: -7px;
     font-size: 3.5rem;
     text-align: center;
-    color: #f77355;
+    color: #2b416e;
   }
   .shopSecion .items_Grid .col2 .imgContainer p {
     font-size: 0.75rem;
@@ -1157,6 +1201,7 @@ subscriptionContainer */
   }
   .middleSection__Container {
     max-width: 100vw;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1275,8 +1320,9 @@ subscriptionContainer */
     .circleBorder
     .mainCircle
     .logoContainer {
-    width: 9rem;
-    height: 9rem;
+    width: 15rem;
+    height: 15rem;
+    margin-top: -1.5rem;
   }
   .hero__Section
     .heroImage__Container
@@ -1287,7 +1333,7 @@ subscriptionContainer */
     letter-spacing: -5px;
     font-size: 40px;
     margin-bottom: 1.25rem;
-    margin-top: -1rem;
+    margin-top: -2rem;
   }
   .footerComponent .upper {
     width: 30%;
@@ -1365,8 +1411,8 @@ subscriptionContainer */
     .circleBorder
     .mainCircle
     .logoContainer {
-    width: 9rem;
-    height: 9rem;
+    width: 12rem;
+    height: 12rem;
   }
   .hero__Section
     .heroImage__Container
@@ -1383,8 +1429,8 @@ subscriptionContainer */
     width: 9rem;
     height: 2.5rem;
     background-color: transparent;
-    border: 3px solid #f77355;
-    color: #f77355;
+    border: 3px solid #2b416e;
+    color: #2b416e;
     font-size: 1rem;
     font-weight: 700;
     font-family: Lulo-Clean-W01-One-Bold;
