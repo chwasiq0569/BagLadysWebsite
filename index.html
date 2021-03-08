@@ -18,7 +18,7 @@
                 <nav>
                     <a href="#home">HOME</a>
                     <a href="#about">ABOUT</a>
-                    <a href="#menu">MENU</a>
+                    <a href="#foodMenu">MENU</a>
                     <a href="#gallery">GALLERY</a>
                     <a href="#shop">SHOP</a>
                     <a href="#contact">CONTACT</a>
@@ -32,9 +32,10 @@
                 <div id="mobileNav" class="mobileNav">
                     <a class="mobClicks" id="click1" href="#home">HOME</a>
                     <a class="mobClicks" id="click2" href="#about">ABOUT</a>
-                    <a class="mobClicks" id="click3" href="#gallery">GALLERY</a>
-                    <a class="mobClicks" id="click4" href="#shop">SHOP</a>
-                    <a class="mobClicks" id="click5" href="#contact">CONTACT</a>
+                    <a class="mobClicks" id="click3" href="#foodMenu">MENU</a>
+                    <a class="mobClicks" id="click4" href="#gallery">GALLERY</a>
+                    <a class="mobClicks" id="click5" href="#shop">SHOP</a>
+                    <a class="mobClicks" id="click6" href="#contact">CONTACT</a>
                 </div>
             </div>
             <div id="home" class="hero__Section">
@@ -74,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="menuSection">
+            <div id="foodMenu" class="menuSection">
                 <div class="menuSection__head">
                     <h1 class="headText">
                         MAIN MENU
@@ -195,7 +196,7 @@
                         <div class="productComponent">
                             <div class="upper">
                                 <h1>Bag Lady Sauce(sweet heat bbq sauce)</h1>
-                                <em>9&nbsp;<sup>00</sup></em>
+                                <!-- <em>9&nbsp;<sup>00</sup></em> -->
                             </div>
                             <div class="lower">
                                 <p>sweet heat bbq sauce</p>
@@ -204,7 +205,7 @@
                         <div class="productComponent">
                             <div class="upper">
                                 <h1>Willie Sauce</h1>
-                                <em>8&nbsp;<sup>00</sup></em>
+                                <!-- <em>8&nbsp;<sup>00</sup></em> -->
                             </div>
                             <div class="lower">
                                 <p>mayo and ranch base sauce
@@ -214,7 +215,7 @@
                         <div class="productComponent">
                             <div class="upper">
                                 <h1>AÇAÍ BANANA BERRY</h1>
-                                <em>7&nbsp;<sup>00</sup></em>
+                                <!-- <em>7&nbsp;<sup>00</sup></em> -->
                             </div>
                             <div class="lower">
                                 <p>Açaí, raspberry, blueberry, banana, vanilla cashew milk, topped with hempseed
@@ -240,7 +241,7 @@
                                 <div class="productComponent">
                                     <div class="upper">
                                         <h1>THE BLOCK IS HOT</h1>
-                                        <em>8&nbsp;<sup>00</sup></em>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
                                     </div>
                                     <div class="lower">
                                         <p>Fries, Hot or Not chicken (bone-in or tenderonies), pickles, cajun/spicy
@@ -254,7 +255,7 @@
                                     <div class="upper">
                                         <h1>THE WALK IT OUT
                                         </h1>
-                                        <em>8&nbsp;<sup>00</sup></em>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
                                     </div>
                                     <div class="lower">
                                         <p>Chips, taco meat or seasoned chicken, lettuce, cheese, sour cream, taco sauce
@@ -266,7 +267,7 @@
                                     <div class="upper">
                                         <h1>The Fresh Prince of Bel-Air
                                         </h1>
-                                        <em>8&nbsp;<sup>00</sup></em>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
                                     </div>
                                     <div class="lower">
                                         <p>Fries, Philly meat, green peppers and onions. Provolone cheese, drizzled with
@@ -280,7 +281,7 @@
                                     <div class="upper">
                                         <h1>Bubba’s Big Country
                                         </h1>
-                                        <em>8&nbsp;<sup>00</sup></em>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
                                     </div>
                                     <div class="lower">
                                         <p>Fries, deep fried beef or pork ribs, topped with Bag Lady’s sauce and an
@@ -292,7 +293,7 @@
                                     <div class="upper">
                                         <h1>The Cowabunga Dude
                                         </h1>
-                                        <em>8&nbsp;<sup>00</sup></em>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
                                     </div>
                                     <div class="lower">
                                         <p>Fries, in-house pizza sauce, mozzarella cheese, pepperoni or sausage, crushed
@@ -304,7 +305,7 @@
                                     <div class="upper">
                                         <h1>The Kountry Wayne(Funniest Vegan I know)
                                         </h1>
-                                        <em>8&nbsp;<sup>00</sup></em>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
                                     </div>
                                     <div class="lower">
                                         <p>Fried Cauliflower, Meatless crumbles, mushrooms and Vegan Cheese
@@ -476,6 +477,10 @@
             document.getElementById("nav-icon3").classList.remove("open");
         })
         document.getElementById("click5").addEventListener("click", function () {
+            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+            document.getElementById("nav-icon3").classList.remove("open");
+        })
+        document.getElementById("click6").addEventListener("click", function () {
             document.getElementById("mobileNav").classList.remove("mobileNavOpen");
             document.getElementById("nav-icon3").classList.remove("open");
         })

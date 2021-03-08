@@ -1086,6 +1086,7 @@ subscriptionContainer */
   font-size: 1rem;
   letter-spacing: -3px;
   font-family: LuloClean;
+  border: none;
 }
 #byobSection {
   display: none;
