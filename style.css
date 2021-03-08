@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -287,6 +288,7 @@ body {
   z-index: 1;
   padding: 0;
   margin-top: -3.5rem;
+  cursor: pointer;
 }
 .hero__Section
   .heroImage__Container
@@ -410,12 +412,20 @@ body {
   cursor: pointer;
   z-index: 1;
 }
+.intro__Section .leftSide .catchUs__Btn a {
+  text-decoration: none;
+  color: #2b416e;
+  transition: all 0.5s ease;
+}
+
 .intro__Section .leftSide .catchUs__Btn:hover {
   background-color: #2b416e;
   color: white;
   border-radius: 0;
 }
-
+.intro__Section .leftSide .catchUs__Btn:hover a {
+  color: white;
+}
 .intro__Section .leftSide .waves__Container {
   width: 5rem;
   height: 5rem;
@@ -738,6 +748,7 @@ body {
   font-size: 1rem;
   font-family: AvenirMedium;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 .menuSection
   .contentSection
@@ -834,6 +845,7 @@ body {
   text-align: left;
   line-height: 1.4;
   color: rgb(114, 110, 116);
+  text-transform: capitalize;
 }
 
 .menuSection .contentSection .contentSection__rightSide .upperSection {
@@ -1074,6 +1086,9 @@ subscriptionContainer */
   font-size: 1rem;
   letter-spacing: -3px;
   font-family: LuloClean;
+}
+#byobSection {
+  display: none;
 }
 @media only screen and (max-width: 968px) {
   .intro__Section .leftSide .head {
@@ -1398,6 +1413,23 @@ subscriptionContainer */
   .menuSection .headlineText {
     width: 80%;
     /* margin-top: 2rem; */
+  }
+  .donateSection {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .donateSection .tagline {
+    font-size: 1rem;
+  }
+  .donateSection .thanksTxt {
+    font-size: 1.15rem;
+  }
+  .donateSection .donationBtn {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (max-width: 400px) {

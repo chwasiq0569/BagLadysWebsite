@@ -16,11 +16,12 @@
                 <div class="nav_bgWrapper">
                 </div>
                 <nav>
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">GALLERY</a>
-                    <a href="#">SHOP</a>
-                    <a href="#">CONTACT</a>
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#menu">MENU</a>
+                    <a href="#gallery">GALLERY</a>
+                    <a href="#shop">SHOP</a>
+                    <a href="#contact">CONTACT</a>
                 </nav>
                 <div id="nav-icon3">
                     <span></span>
@@ -29,21 +30,23 @@
                     <span></span>
                 </div>
                 <div id="mobileNav" class="mobileNav">
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">GALLERY</a>
-                    <a href="#">SHOP</a>
-                    <a href="#">CONTACT</a>
+                    <a class="mobClicks" id="click1" href="#home">HOME</a>
+                    <a class="mobClicks" id="click2" href="#about">ABOUT</a>
+                    <a class="mobClicks" id="click3" href="#gallery">GALLERY</a>
+                    <a class="mobClicks" id="click4" href="#shop">SHOP</a>
+                    <a class="mobClicks" id="click5" href="#contact">CONTACT</a>
                 </div>
             </div>
-            <div class="hero__Section">
+            <div id="home" class="hero__Section">
                 <div class="heroImage__Container">
                     <img src="./assets/images/truck.jpg" alt="hero_Img" />
                     <div class="circle__Component">
                         <div class="circleBorder">
                             <div class="mainCircle">
                                 <div class="logoContainer">
-                                    <img src="./assets/logo/bag-ladys-logo.png" alt="logo" />
+                                    <a href="#about">
+                                        <img src="./assets/logo/bag-ladys-logo.png" alt="logo" />
+                                    </a>
                                 </div>
                                 <h1 class="title">great food on the go</h1>
                                 <!-- <button class="catchUs__Btn heroCTA">CATCH US</button> -->
@@ -52,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="intro__Section">
+            <div id="about" class="intro__Section">
                 <div class="leftSide">
                     <div class="waves__Container">
                         <img src="./assets/images/waves.webp" alt="waves_Image" />
@@ -62,7 +65,7 @@
                         you’ll discover unexpected twists to your favorite seafood classics. Every dish blends
                         traditional family recipes with urban adventure for a perfect balance of excitement and tasty.
                     </p>
-                    <button class="catchUs__Btn">CATCH US</button>
+                    <button class="catchUs__Btn"><a href="#contact">CATCH US</a></button>
                 </div>
                 <div class="rightSide">
                     <div class="imgContainer">
@@ -90,27 +93,121 @@
                         </button>
                     </div>
                 </div>
-                <div class="contentSection">
+                <div id="byobSection" class="contentSection">
                     <div class="contentSection__leftSide">
-                        <h1 class="head">AÇAÍ BOWLS</h1>
+                        <h1 class="head">Sauces</h1>
                         <div class="productComponent">
                             <div class="upper">
-                                <h1>AÇAÍ PITAYA BOWL</h1>
-                                <em>9&nbsp;<sup>00</sup></em>
+                                <h1>Bag Lady Sauce(sweet heat bbq sauce)</h1>
+                                <!-- <em>9&nbsp;<sup>00</sup></em> -->
                             </div>
                             <div class="lower">
-                                <p>Pitaya, banana, pineapple, coconut, topped with hempseed granola, coconut flakes,
-                                    banana and agave nectar</p>
+                                <p>sweet heat bbq sauce</p>
                             </div>
                         </div>
                         <div class="productComponent">
                             <div class="upper">
-                                <h1>AÇAÍ TROPICAL</h1>
+                                <h1>Willie Sauce</h1>
+                                <!-- <em>8&nbsp;<sup>00</sup></em> -->
+                            </div>
+                            <div class="lower">
+                                <p>mayo and ranch base sauce
+                                </p>
+                            </div>
+                        </div>
+                        <div class="productComponent">
+                            <div class="upper">
+                                <h1>AÇAÍ BANANA BERRY</h1>
+                                <!-- <em>7&nbsp;<sup>00</sup></em> -->
+                            </div>
+                            <div class="lower">
+                                <p>Açaí, raspberry, blueberry, banana, vanilla cashew milk, topped with hempseed
+                                    granola, fresh strawberry, blueberry and honey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentSection__rightSide">
+                        <div class="upperSection">
+                            <h1 class="head">BUILD YOUR ON BAG</h1>
+                            <div class="productComponent">
+
+                                <div class="lower">
+                                    <p><em>Whether it's a special occasion, an opportunity for friends to catch up, or a
+                                            pleasant start to a lazy weekend day, Sunday Brunch is a meal for relaxation
+                                            and good company. Join us here at Spoon for Sunday Brunch from 9am to
+                                            1pm.</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lowerSection">
+                            <div class="leftSide">
+                                <div class="productComponent">
+                                    <div class="upper">
+                                        <h1>PICK YOU BASE</h1>
+                                        <em>$10&nbsp;<sup></sup></em>
+                                    </div>
+                                    <div class="lower">
+                                        <p>FRIES OR CHIPS</p>
+                                    </div>
+                                </div>
+                                <div class="productComponent">
+                                    <div class="upper">
+                                        <h1>PROTEINS</h1>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
+                                    </div>
+                                    <div class="lower">
+                                        <p>Pulled chicken, pulled pork, grilled chicken, shrimp, beef sausage,
+                                            pepperoni, ground lamb, gyro meat, bacon, philly meat, ground beef
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rightSide">
+                                <div class="productComponent">
+                                    <div class="upper">
+                                        <h1>Cheese</h1>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
+                                    </div>
+                                    <div class="lower">
+                                        <p>Queso , Mexican style shredded cheese, nacho cheese, provolone, mozzarella
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="productComponent">
+                                    <div class="upper">
+                                        <h1>Veggies</h1>
+                                        <!-- <em>8&nbsp;<sup>00</sup></em> -->
+                                    </div>
+                                    <div class="lower">
+                                        <p>Lettuce, spinach, green peppers, onions, tomatoes, jalapenos, banana peppers,
+                                            mushrooms, pickles
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="signatureDishesSection" class="contentSection">
+                    <div class="contentSection__leftSide">
+                        <h1 class="head">Sauces</h1>
+                        <div class="productComponent">
+                            <div class="upper">
+                                <h1>Bag Lady Sauce(sweet heat bbq sauce)</h1>
+                                <em>9&nbsp;<sup>00</sup></em>
+                            </div>
+                            <div class="lower">
+                                <p>sweet heat bbq sauce</p>
+                            </div>
+                        </div>
+                        <div class="productComponent">
+                            <div class="upper">
+                                <h1>Willie Sauce</h1>
                                 <em>8&nbsp;<sup>00</sup></em>
                             </div>
                             <div class="lower">
-                                <p>Açaí, banana, pineapple, coconut butter,
-                                    vanilla cashew milk, topped with hempseed granola, coconut flakes, banana and honey
+                                <p>mayo and ranch base sauce
                                 </p>
                             </div>
                         </div>
@@ -128,11 +225,8 @@
                     </div>
                     <div class="contentSection__rightSide">
                         <div class="upperSection">
-                            <h1 class="head">SUNDAY BRUNCH</h1>
+                            <h1 class="head">SIGNATURE DISHES</h1>
                             <div class="productComponent">
-                                <!-- <div class="upper">
-                                    <h1>AÇAÍ BANANA BERRY</h1>
-                                </div>     -->
                                 <div class="lower">
                                     <p><em>Whether it's a special occasion, an opportunity for friends to catch up, or a
                                             pleasant start to a lazy weekend day, Sunday Brunch is a meal for relaxation
@@ -145,68 +239,76 @@
                             <div class="leftSide">
                                 <div class="productComponent">
                                     <div class="upper">
-                                        <h1>LAVENDER SCENTED PANCAKES</h1>
+                                        <h1>THE BLOCK IS HOT</h1>
                                         <em>8&nbsp;<sup>00</sup></em>
                                     </div>
                                     <div class="lower">
-                                        <p>Raspberries, vanilla butter</p>
+                                        <p>Fries, Hot or Not chicken (bone-in or tenderonies), pickles, cajun/spicy
+                                            ranch
+                                            <br>
+                                            (10% off on Tuesday and Thursday)
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="productComponent">
                                     <div class="upper">
-                                        <h1>BAKED EGGS & CHORIZO</h1>
+                                        <h1>THE WALK IT OUT
+                                        </h1>
                                         <em>8&nbsp;<sup>00</sup></em>
                                     </div>
                                     <div class="lower">
-                                        <p>with tomato and pepper ragout and greek yoghurt</p>
+                                        <p>Chips, taco meat or seasoned chicken, lettuce, cheese, sour cream, taco sauce
+                                            and jalapenos
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="productComponent">
                                     <div class="upper">
-                                        <h1>CORNBREAD FRENCH TOAST</h1>
+                                        <h1>The Fresh Prince of Bel-Air
+                                        </h1>
                                         <em>8&nbsp;<sup>00</sup></em>
                                     </div>
                                     <div class="lower">
-                                        <p>with bacon, rucola and avocado</p>
-                                    </div>
-                                </div>
-                                <div class="productComponent">
-                                    <div class="upper">
-                                        <h1>BOTTOMLESS MIMOSAS</h1>
-                                        <em></em>
-                                    </div>
-                                    <div class="lower">
-                                        <p></p>
+                                        <p>Fries, Philly meat, green peppers and onions. Provolone cheese, drizzled with
+                                            “Willie Sauce”
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="rightSide">
                                 <div class="productComponent">
                                     <div class="upper">
-                                        <h1>SPOON FRY</h1>
+                                        <h1>Bubba’s Big Country
+                                        </h1>
                                         <em>8&nbsp;<sup>00</sup></em>
                                     </div>
                                     <div class="lower">
-                                        <p>Eggs any style, crispy bacon, slow roast tomatoes, thyme roasted portobello
-                                            mushrooms</p>
+                                        <p>Fries, deep fried beef or pork ribs, topped with Bag Lady’s sauce and an
+                                            onion ring
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="productComponent">
                                     <div class="upper">
-                                        <h1>FRUIT SALAD WITH YUZU VANILLA SYRUP AND FRESH MINT</h1>
+                                        <h1>The Cowabunga Dude
+                                        </h1>
                                         <em>8&nbsp;<sup>00</sup></em>
                                     </div>
                                     <div class="lower">
-                                        <p>Melon, pineapple, strawberries, mango and banana</p>
+                                        <p>Fries, in-house pizza sauce, mozzarella cheese, pepperoni or sausage, crushed
+                                            red pepper and parmesan cheese
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="productComponent">
                                     <div class="upper">
-                                        <h1>SCRAMBLED EGGS & ORGANIC SALMON</h1>
+                                        <h1>The Kountry Wayne(Funniest Vegan I know)
+                                        </h1>
                                         <em>8&nbsp;<sup>00</sup></em>
                                     </div>
                                     <div class="lower">
-                                        <p>served on sourdough bread, topped with rucola and creme fraiche</p>
+                                        <p>Fried Cauliflower, Meatless crumbles, mushrooms and Vegan Cheese
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +318,7 @@
             </div>
 
 
-            <div class="middleSection__Container">
+            <div id="gallery" class="middleSection__Container">
                 <div class="innerContainer">
                     <div class="col col1">
                         <div class="upperSection">
@@ -265,7 +367,7 @@
 
 
 
-            <div class="shopSecion">
+            <div id="shop" class="shopSecion">
                 <h1 class="section__Head">SHOP NOW</h1>
                 <div class="items_Grid">
                     <div class="gridCol col1">
@@ -321,7 +423,7 @@
                 <p class="thanksTxt"><em>Thanks!</em></p>
                 <button class="donationBtn">Donate Now</button>
             </div>
-            <div class="footerComponent">
+            <div id="contact" class="footerComponent">
                 <div class="upper">
                     <div class="iconContainer">
                         <img src="./assets/images/twitterIconWhite.webp" alt="twitterIcon" />
@@ -355,6 +457,28 @@
                 $("#mobileNav").toggleClass('mobileNavOpen');
             });
         });
+
+
+        document.getElementById("click1").addEventListener("click", function () {
+            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+            document.getElementById("nav-icon3").classList.remove("open");
+        })
+        document.getElementById("click2").addEventListener("click", function () {
+            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+            document.getElementById("nav-icon3").classList.remove("open");
+        })
+        document.getElementById("click3").addEventListener("click", function () {
+            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+            document.getElementById("nav-icon3").classList.remove("open");
+        })
+        document.getElementById("click4").addEventListener("click", function () {
+            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+            document.getElementById("nav-icon3").classList.remove("open");
+        })
+        document.getElementById("click5").addEventListener("click", function () {
+            document.getElementById("mobileNav").classList.remove("mobileNavOpen");
+            document.getElementById("nav-icon3").classList.remove("open");
+        })
     </script>
 </body>
 
